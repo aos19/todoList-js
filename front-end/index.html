@@ -11,13 +11,21 @@
         <h1 class="titulo-principal">Hoje</h1>
     
         <div class="area-tarefas">
-            <ul class="area-tarefas-lista"></ul>
+            <ul class="area-tarefas-lista"></ul>    
         </div>
     </section>
 
     <!-- Input de entrada do usuário -->
-     <input placeholder="Digite sua nova tarefa aqui" type="text" class="entrada-usuario">
+     <input class="entrada-usuario" placeholder="Digite sua nova tarefa aqui" type="text">
 
-     <input type="submit" class="botao-insere" onclick="adicionarTarefa()">
+     <div class="botoes">
+        <!-- Botão de inserir tarefas -->
+         <input type="submit" class="botao-insere" onclick="adicionarTarefa()" value="Enviar">
+
+        <!-- Botão de remover tarefas -->
+        <input type="submit" class="botao-remove" onclick="removerTarefa()" value="Remover">
+    </div>
+
+     <script src="todolist.js"></script>
 </body>
 </html>

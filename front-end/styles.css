@@ -1,6 +1,7 @@
 :root {
     --corBorda: #a0a0a0;
     --enviar: blue;
+    --remover: red;
 
 }
 
@@ -31,8 +32,12 @@ body {
 }
 
 .area-tarefas {
-    font-size: 11pt;
+    font-size: 14pt;
     margin: 30px 0 0 30px;
+}
+
+.area-tarefas-lista {
+    list-style-type: none;
 }
 
 .entrada-usuario {
@@ -43,6 +48,15 @@ body {
     border-radius: 10px;
     border: 1px solid var(--corBorda);
     outline: none;
+}
+
+.entrada-usuario:hover {
+    background-color: #ccc6c6;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
 }
 
 .botao-insere {
@@ -57,5 +71,20 @@ body {
 
 .botao-insere:hover {
     background-color: var(--enviar);
+    color: #fff;
+}
+
+.botao-remove {
+    margin: 10px 0 0 0;
+    padding: 12px;
+    font-size: 13pt;
+    border-radius: 7px;
+    background-color: #fff;
+    border: 1px solid var(--remover);
+    color: var(--remover);
+}
+
+.botao-remove:hover {
+    background-color: var(--remover);
     color: #fff;
 }
